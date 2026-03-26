@@ -19,14 +19,14 @@ export default function Header(): React.ReactNode {
     const [open, setOpen] = useState(false);
     return (
         <header className="sticky top-0 z-10 p-3 border-b border-slate-200 backdrop-blur-lg">
-            <div className="mx-auto flex max-w-7xl px-4 py-3 md:px-8">
+            <div className="mx-auto flex px-4 py-3 md:px-8">
                 <FadeInDown className="inline-flex items-center">
                     <Link href="/">
                         <div className="logoContainer">
                             <p className="logo">tb</p>
                             <div className="nameContainer">
-                                <p>Theodore Bellas</p>
-                                <p className="job-title">Software Engineer</p>
+                                <p className="hidden md:block">Theodore Bellas</p>
+                                <p className="job-title hidden md:block">Software Engineer</p>
                             </div>
                         </div>
                     </Link>
