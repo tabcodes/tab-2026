@@ -1,4 +1,3 @@
-import Image from "next/image";
 import FadeInDown from "./FadeInDown";
 export default function Home() {
   return (
@@ -6,7 +5,6 @@ export default function Home() {
       <main className="flex w-full max-w-3xl flex-col items-center justify-between py-32 px-16 sm:items-start">
         <FadeInDown>
           <span className={'text-5xl'}>
-            Theodore Bellas
           </span>
         </FadeInDown>
       </main>
