@@ -3,6 +3,8 @@
 import Link from "next/link";
 import FadeInDown from "./FadeInDown";
 import { useState } from "react";
+import { ReactTyped } from "react-typed";
+
 type NavItem = {
     label: string;
     href: string;
@@ -26,7 +28,16 @@ export default function Header(): React.ReactNode {
                             <p className="logo">tb</p>
                             <div className="nameContainer">
                                 <p className="hidden md:block">Theodore Bellas</p>
-                                <p className="job-title hidden md:block">Software Engineer</p>
+                                <ReactTyped
+                                    strings={["Software Engineer"]}
+                                    typeSpeed={100}
+                                    loop={false}
+                                    startDelay={650}
+                                    showCursor={true}
+                                    className="job-title hidden md:block"
+                                    onComplete={(typed) => {
+                                        typed.cursor.remove();
+                                    }} />
                             </div>
                         </div>
                     </Link>
