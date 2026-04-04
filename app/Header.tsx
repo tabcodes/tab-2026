@@ -22,61 +22,61 @@ export default function Header(): React.ReactNode {
     return (
         <header className="sticky top-0 z-10 p-3 border-b border-slate-200 backdrop-blur-lg">
             <div className="mx-auto flex px-4 py-3 md:px-8">
-                <FadeInDown className="inline-flex items-center">
+                <FadeInDown className="inline-flex items-center align-left">
                     <Link href="/">
                         <div className="logoContainer">
                             <p className="logo">tb</p>
                             <div className="nameContainer">
-                                <p className="hidden md:block">Theodore Bellas</p>
+                                <p className="block">Theodore Bellas</p>
                                 <ReactTyped
                                     strings={["Software Engineer"]}
                                     typeSpeed={100}
                                     loop={false}
                                     startDelay={650}
                                     showCursor={true}
-                                    className="job-title hidden md:block"
+                                    className="job-title block"
                                     onComplete={(typed) => {
                                         typed.cursor.remove();
                                     }} />
                             </div>
                         </div>
                     </Link>
-
-                    <button
-                        type="button"
-                        onClick={() => setOpen(!open)}
-                        className="inline-flex items-center rounded-md border border-slate-300 p-2 text-slate-700 hover:bg-slate-100 md:hidden"
-                        aria-label="Toggle navigation menu"
-                        aria-expanded={open}
-                    >
-                        <svg
-                            className="h-6 w-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M4 6h16M4 12h16M4 18h16"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                            />
-                        </svg>
-                    </button>
-
-                    <nav className="hidden items-center gap-6 md:flex">
-                        {navItems.map((item) => (
-                            <Link
-                                key={item.href}
-                                href={item.href}
-                                className="hover:text-slate-600"
-                            >
-                                {item.label}
-                            </Link>
-                        ))}
-                    </nav>
                 </FadeInDown>
+
+                <button
+                    type="button"
+                    onClick={() => setOpen(!open)}
+                    className="inline-flex items-center rounded-md border border-slate-300 p-2 text-slate-700 hover:bg-slate-100 md:hidden align-right ml-auto"
+                    aria-label="Toggle navigation menu"
+                    aria-expanded={open}
+                >
+                    <svg
+                        className="h-6 w-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M4 6h16M4 12h16M4 18h16"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                        />
+                    </svg>
+                </button>
+
+                <nav className="hidden items-center gap-6 md:flex align-right ml-auto">
+                    {navItems.map((item) => (
+                        <Link
+                            key={item.href}
+                            href={item.href}
+                            className="hover:text-slate-600"
+                        >
+                            {item.label}
+                        </Link>
+                    ))}
+                </nav>
             </div>
 
         </header >
