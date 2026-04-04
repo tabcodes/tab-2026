@@ -4,23 +4,22 @@ import Link from "next/link";
 import FadeInDown from "./FadeInDown";
 import { useState } from "react";
 import { ReactTyped } from "react-typed";
+import { FaGithub } from "react-icons/fa";
 
 type NavItem = {
-    label: string;
+    label: string | React.ReactNode;
     href: string;
 }
 
 const navItems: NavItem[] = [
-    { label: "Who?", href: "/who" },
-    { label: "What?", href: "/what" },
-    { label: "How?", href: "/how" },
+    
 ]
 
 export default function Header(): React.ReactNode {
 
     const [open, setOpen] = useState(false);
     return (
-        <header className="sticky top-0 z-10 p-3 border-b border-slate-200 backdrop-blur-lg">
+        <header className="sticky top-0 z-10 p-3 border-b bg-slate-500 border-slate-200 backdrop-blur-lg">
             <div className="mx-auto flex px-4 py-3 md:px-8">
                 <FadeInDown className="inline-flex items-center align-left">
                     <Link href="/">
