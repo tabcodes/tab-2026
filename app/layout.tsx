@@ -24,7 +24,7 @@ export default function RootLayout({
         className={`${jost.className}`}
       >
         <Header />
-        <div className="flex space-x-8 ml-10">
+        <div className="flex space-x-8 ml-10 mt-10">
           <pre className="mx-auto text-3xl text-slate-500">[coming soon]</pre>
         </div>
         <div className="flex space-x-8 ml-10 mt-10">
@@ -32,10 +32,9 @@ export default function RootLayout({
               <FaGithub />
             </Link>
         </div>
-        <div className="">
+        {/* <div className="">
           {children}
-
-        </div>
+        </div> */}
       </body>
     </html>
   );
