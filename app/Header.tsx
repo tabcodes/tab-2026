@@ -19,7 +19,7 @@ export default function Header(): React.ReactNode {
 
     const [open, setOpen] = useState(false);
     return (
-        <header className="sticky top-0 z-10 p-3 border-b bg-slate-500 border-slate-200 backdrop-blur-lg">
+        <header className="sticky top-0 z-10 p-3 border-b bg-slate-700 text-white border-slate-200 backdrop-blur-lg">
             <div className="mx-auto flex px-4 py-3 md:px-8">
                 <FadeInDown className="inline-flex items-center align-left">
                     <Link href="/">
