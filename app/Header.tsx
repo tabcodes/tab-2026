@@ -20,23 +20,16 @@ export default function Header(): React.ReactNode {
     const [open, setOpen] = useState(false);
     return (
         <header className="sticky top-0 z-10 p-3 border-b bg-slate-700 text-white border-slate-200 backdrop-blur-lg">
-            <div className="mx-auto flex px-4 py-3 md:px-8">
-                <FadeInDown className="inline-flex items-center align-left">
+            <div className="flex px-4 py-3">
+                <FadeInDown className="mx-auto inline-flex items-center ">
                     <Link href="/">
                         <div className="logoContainer">
                             <p className="logo">tb</p>
                             <div className="nameContainer">
                                 <p className="block">Theodore Bellas</p>
-                                <ReactTyped
-                                    strings={["Software Engineer"]}
-                                    typeSpeed={100}
-                                    loop={false}
-                                    startDelay={650}
-                                    showCursor={true}
-                                    className="job-title block"
-                                    onComplete={(typed) => {
-                                        typed.cursor.remove();
-                                    }} />
+                                <p className="job-title block">
+                                    Software Engineer
+                                </p>
                             </div>
                         </div>
                     </Link>
