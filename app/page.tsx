@@ -17,7 +17,7 @@ export default function Home() {
                 loop={false}
                 startDelay={650}
                 showCursor={false}
-                className=""
+                className="text-center text-slate-700"
                 />
             </h1>
           </div>
@@ -27,12 +27,16 @@ export default function Home() {
             </FadeInDown>
             <FadeInDown delay={0.1}>
               <p className="mt-6 text-lg leading-8 text-slate-300">
-                I'm a software engineer with a passion for building impactful products. I have experience in full-stack development, and I'm always eager to learn new technologies and improve my skills.
+                I'm a software engineer with over a decade of experience in the field, in industries like
+                <span className="text-slate-800"> managed services,</span> 
+                <span className="text-slate-800"> data management,</span> and 
+                <span className="text-slate-800"> enterprise healthcare software.</span>
               </p>
             </FadeInDown>
             <FadeInDown delay={0.2}>
               <p className="mt-6 text-lg leading-8 text-slate-300">
-                I'm currently open to new opportunities, so feel free to reach out if you'd like to connect or collaborate on a project!
+                I'm currently looking for a new place to call home- somewhere I can continue to grow,
+                contribute to meaningful projects, and make a positive impact to product and process alike.
               </p>
             </FadeInDown>
           </div>

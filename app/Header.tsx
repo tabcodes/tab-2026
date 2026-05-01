@@ -20,8 +20,8 @@ export default function Header(): React.ReactNode {
     const [open, setOpen] = useState(false);
     return (
         <header className="sticky top-0 z-10 p-3 border-b bg-slate-700 text-white border-slate-200 backdrop-blur-lg">
-            <div className="flex px-4 py-3">
-                <FadeInDown className="mx-auto inline-flex items-center ">
+            <div className="flex items-center justify-center px-4 py-3">
+                <FadeInDown className="inline-flex items-center">
                     <Link href="/">
                         <div className="logoContainer">
                             <p className="logo">tb</p>
@@ -38,7 +38,7 @@ export default function Header(): React.ReactNode {
                 <button
                     type="button"
                     onClick={() => setOpen(!open)}
-                    className="inline-flex items-center rounded-md border border-slate-300 p-2 text-slate-700 hover:bg-slate-100 md:hidden align-right ml-auto"
+                    className="inline-flex items-center rounded-md border border-slate-300 p-2 text-slate-700 hover:bg-slate-100 md:hidden"
                     aria-label="Toggle navigation menu"
                     aria-expanded={open}
                 >
@@ -58,7 +58,7 @@ export default function Header(): React.ReactNode {
                     </svg>
                 </button>
 
-                <nav className="hidden items-center gap-6 md:flex align-right ml-auto">
+                <nav className="hidden items-center gap-6 md:flex">
                     {navItems.map((item) => (
                         <Link
                             key={item.href}
