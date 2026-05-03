@@ -12,31 +12,39 @@ export default function Home() {
             <h1 className="text-4xl font-bold tracking-tight text-slate-100 sm:text-5xl">
               I&nbsp;
               <ReactTyped
-                strings={["develop software.", " architect solutions.", "solve complex technical problems.", "build products.", "make stuff."]}
-                typeSpeed={50}
-                loop={false}
+                strings={["develop software.",
+                  "architect solutions.",
+                  "solve complex technical problems.", 
+                  "build products.", 
+                  "optimize existing workflows.",]}
+
+                typeSpeed={75}
                 startDelay={650}
+                loop={true}
+                loopCount={3}
+                backDelay={1000}
                 showCursor={false}
                 className="text-center text-slate-700"
-                />
+              />
             </h1>
           </div>
           <div className="gap-2">
             <FadeInDown>
-
-            </FadeInDown>
-            <FadeInDown delay={0.1}>
               <p className="mt-6 text-lg leading-8 text-slate-300">
                 I'm a software engineer with over a decade of experience in the field, in industries like
-                <span className="text-slate-800"> managed services,</span> 
-                <span className="text-slate-800"> data management,</span> and 
+                <span className="text-slate-800"> managed services,</span>
+                <span className="text-slate-800"> data management,</span> and
                 <span className="text-slate-800"> enterprise healthcare software.</span>
               </p>
             </FadeInDown>
-            <FadeInDown delay={0.2}>
+            <FadeInDown>
               <p className="mt-6 text-lg leading-8 text-slate-300">
                 I'm currently looking for a new place to call home- somewhere I can continue to grow,
                 contribute to meaningful projects, and make a positive impact to product and process alike.
+              </p>
+
+              <p className="mt-6 text-lg leading-8 text-slate-300">
+                If you're in need of a software engineer with an analytical, risk-based approach to problem-solving, feel free to reach out!
               </p>
             </FadeInDown>
           </div>
