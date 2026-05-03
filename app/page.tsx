@@ -1,6 +1,6 @@
 "use client";
 import FadeInDown from "./FadeInDown";
-import { FaArrowAltCircleDown } from "react-icons/fa";
+import IconSlider from "./IconSlider";
 import { ReactTyped } from "react-typed";
 export default function Home() {
   return (
@@ -14,10 +14,9 @@ export default function Home() {
               <ReactTyped
                 strings={["develop software.",
                   "architect solutions.",
-                  "solve complex technical problems.", 
-                  "build products.", 
+                  "solve complex technical problems.",
+                  "build products.",
                   "optimize existing workflows.",]}
-
                 typeSpeed={75}
                 startDelay={650}
                 loop={true}
@@ -48,6 +47,16 @@ export default function Home() {
               </p>
             </FadeInDown>
           </div>
+        </div>
+        <div className="grid mx-auto grid-cols-1">
+          <div className="text-center text-2xl text-slate-300">
+            Things I use include:
+          </div>
+          <div className="mt-5">
+            <IconSlider />
+          </div>
+
+
         </div>
 
 
