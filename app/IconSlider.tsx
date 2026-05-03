@@ -2,11 +2,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from "swiper/modules";
 import 'swiper/css';
-import { SiLaravel, SiMysql, SiPhp, SiPostgresql, SiRubyonrails, SiSidekiq, SiTailwindcss } from "react-icons/si";
+import { SiKubernetes, SiLaravel, SiMysql, SiPhp, SiPostgresql, SiRedis, SiRubyonrails, SiSidekiq, SiTailwindcss } from "react-icons/si";
 import { DiJsBadge, DiRuby } from "react-icons/di";
 import { RiNextjsLine } from "react-icons/ri";
 import { BsTypescript } from "react-icons/bs";
-import { FaPython, FaGitSquare, FaFlask, FaReact } from "react-icons/fa";
+import { FaPython, FaGitSquare, FaFlask, FaReact, FaDocker } from "react-icons/fa";
 
 const IconSlider = (): React.ReactNode => {
 
@@ -25,8 +25,12 @@ const IconSlider = (): React.ReactNode => {
         <SiMysql className="text-center mx-auto text-6xl text-slate-700" />,
         <SiTailwindcss className="text-center mx-auto text-6xl text-slate-700" />,
         <SiPostgresql className="text-center mx-auto text-6xl text-slate-700" />,
-        <FaReact className="text-center mx-auto text-6xl text-slate-700" />
+        <FaReact className="text-center mx-auto text-6xl text-slate-700" />,
+        <SiKubernetes className="text-center mx-auto text-6xl text-slate-700" />,    
+        <FaDocker className="text-center mx-auto text-6xl text-slate-700" />,
+        <SiRedis className="text-center mx-auto text-6xl text-slate-700" />,
     ]
+
     return (
         <Swiper
             modules={[Autoplay]}
