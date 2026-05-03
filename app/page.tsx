@@ -7,7 +7,7 @@ export default function Home() {
     <div className="flex justify-center">
       <main className="flex flex-wrap w-full max-w-6xl flex-row items-start justify-between gap-16 py-5 px-16">
         <div className="grid place-items-center grid-cols-1 md:grid-cols-2">
-          <div className="">
+          <div className="h-16">
             <h1 className="text-4xl font-bold tracking-tight text-slate-100 sm:text-5xl">
               I&nbsp;
               <ReactTyped
