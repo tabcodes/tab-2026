@@ -4,9 +4,8 @@ import IconSlider from "./IconSlider";
 import { ReactTyped } from "react-typed";
 export default function Home() {
   return (
-    <div className="flex justify-center font-sans">
+    <div className="flex justify-center">
       <main className="flex flex-wrap w-full max-w-6xl flex-row items-start justify-between gap-16 py-5 px-16">
-
         <div className="grid place-items-center grid-cols-1 md:grid-cols-2">
           <div className="">
             <h1 className="text-4xl font-bold tracking-tight text-slate-100 sm:text-5xl">
@@ -19,6 +18,7 @@ export default function Home() {
                   "optimize existing workflows.",]}
                 typeSpeed={75}
                 startDelay={650}
+                backSpeed={20}
                 loop={true}
                 loopCount={3}
                 backDelay={1000}
@@ -49,17 +49,10 @@ export default function Home() {
           </div>
         </div>
         <div className="grid mx-auto grid-cols-1">
-          <div className="text-center text-2xl text-slate-300">
-            Things I use include:
-          </div>
           <div className="mt-5">
             <IconSlider />
           </div>
-
-
         </div>
-
-
       </main>
     </div>
   );
