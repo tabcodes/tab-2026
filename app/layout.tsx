@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
 import Header from "./Header";
-
+import Footer from "./Footer";
 
 import "./globals.css";
 
@@ -21,13 +21,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${jost.className}`}
+        className={`${jost.className} bg-slate-500`}
       >
         <Header />
         <div className="">
           {children}
 
         </div>
+        <Footer />
       </body>
     </html>
   );
