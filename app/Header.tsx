@@ -40,7 +40,7 @@ export default function Header(): React.ReactNode {
                 </FadeInDown>
             </div>
             <div className="flex items-center justify-center">
-                <nav className="items-center gap-6 md:flex">
+                <nav className="flex items-center gap-6">
                     {navItems.map((item) => (
                         <Link
                             key={item.href}
