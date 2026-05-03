@@ -4,7 +4,8 @@ import Link from "next/link";
 import FadeInDown from "./FadeInDown";
 import { useState } from "react";
 import { ReactTyped } from "react-typed";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
 
 type NavItem = {
     label: string | React.ReactNode;
@@ -12,7 +13,9 @@ type NavItem = {
 }
 
 const navItems: NavItem[] = [
-    
+    { label: <FaGithub />, href: "https://github.com/wiretab" },
+    { label: <FaLinkedin />, href: "https://www.linkedin.com/in/theodorebellas/" },
+    { label: <CiMail />, href: "mailto:theodorebellasdev@gmail.com" },
 ]
 
 export default function Header(): React.ReactNode {
@@ -33,37 +36,16 @@ export default function Header(): React.ReactNode {
                             </div>
                         </div>
                     </Link>
+                    
                 </FadeInDown>
-
-                <button
-                    type="button"
-                    onClick={() => setOpen(!open)}
-                    className="inline-flex items-center rounded-md border border-slate-300 p-2 text-slate-700 hover:bg-slate-100 md:hidden"
-                    aria-label="Toggle navigation menu"
-                    aria-expanded={open}
-                >
-                    <svg
-                        className="h-6 w-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M4 6h16M4 12h16M4 18h16"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                        />
-                    </svg>
-                </button>
-
-                <nav className="hidden items-center gap-6 md:flex">
+            </div>
+            <div className="flex items-center justify-center">
+                <nav className="items-center gap-6 md:flex">
                     {navItems.map((item) => (
                         <Link
                             key={item.href}
                             href={item.href}
-                            className="hover:text-slate-600"
+                            className="text-3xl hover:text-slate-600"
                         >
                             {item.label}
                         </Link>
