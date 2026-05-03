@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
 import Header from "./Header";
-
+import Footer from "./Footer";
 
 import "./globals.css";
 
@@ -28,6 +28,7 @@ export default function RootLayout({
           {children}
 
         </div>
+        <Footer />
       </body>
     </html>
   );
